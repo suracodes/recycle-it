@@ -6,7 +6,7 @@
 </br>
 
 ## 🚀 Introduction
-Recycle It is a prototype app based on a start-up Idea by team dotSlashByte built on Start-a-thon. The idea is to collect and recycle used wastes such as plastic, scrap metals, and other non-biodegradables from every source possible from everyday households and small businesses to large industries, factories, and hotels, and then provide the recycled products to the big industries, mainly use recycled products and to the small companies.
+ The idea is to collect and recycle used wastes such as plastic, scrap metals, and other non-biodegradables from every source possible from everyday households and small businesses to large industries, factories, and hotels, and then provide the recycled products to the big industries, mainly use recycled products and to the small companies.
 </br>
 ## 🕵️‍♀️ Why Recycle It?
 
