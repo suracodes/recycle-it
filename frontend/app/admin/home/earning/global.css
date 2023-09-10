@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Odesans-Medium;
+  background-color: #faf3f0;
+}
+* {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: Odesans-Light;
+  src: url("../public/fonts/Odasans-Light.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Odesans-Medium;
+  src: url("../public/fonts/Odasans-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Odesans-Semibold;
+  src: url("../public/fonts/Odasans-Semibold.ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Odesans-Bold;
+  src: url("../public/fonts/Odasans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: Garamond-Regular;
+  src: url("../public/fonts/EBGaramond-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: Space-Grostek;
+  src: url("../public/fonts/SpaceGrotesk-Regular.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: Technology;
+  src: url("../public/fonts/Technology-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: Artik;
+  src: url("../public/fonts/Artik-Regular.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: Roxale;
+  src: url("../public/fonts/RoxaleStory-Regular.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+.card {
+  background-image: radial-gradient(
+    circle 1224px at 50.6% 1.8%,
+    rgba(255, 255, 255, 0.5) 10%,
+    rgba(176, 107, 255, 0.7) 100.2%
+  );
+}
+
+.welcome {
+  background-image: radial-gradient(
+    circle 827px at 47.3% 48%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(138, 192, 216, 1) 90%
+  );
+}
+
+.signup {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(216, 241, 230, 0.46) 0.1%,
+    rgba(233, 226, 226, 0.28) 90.1%
+  );
+}
+
+.panel {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  background-color: #1F2937;
+  background-color: #141414;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+.scroll {
+  scrollbar-width: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+  -moz-appearance: textfield;
+}
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 25px;
+}
+
+.slider-label {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.slider-input {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 1);
+  transition: background-color 0.3s ease;
+  border: 2px;
+  border-color: #141414;
+  opacity: 0.9;
+}
+
+.slider:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 1);
+  top: 2.5px;
+  left: 2.5px;
+  transition: left 0.3s ease;
+}
+
+.slider-input:checked + .slider {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.slider-input:checked + .slider:before {
+  left: calc(100% - 22.5px);
+}
+
+.jiggle {
+  animation: jiggle 0.5s ease-in-out;
+}
+
+@keyframes jiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+}
