@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src ="src/recycle.png" width=full height=full>
-
 # Recycle It/Switch 2 Sustainability
 
 </div>
